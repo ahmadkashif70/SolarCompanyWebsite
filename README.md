@@ -341,27 +341,4 @@ Potential features to add:
 - [ ] Performance monitoring
 - [ ] i18n internationalization
 
-## 👤 Author
-
-**Ahmad**
-- Computer Science Student at LUMS, Lahore
-- Final Semester (Expected Graduation: 2025)
-- Teaching Assistant: Operating Systems (Fall 2024)
-- Teaching Assistant: Calculus 2
-
-## 📄 License
-
-This project is personal portfolio website. Feel free to use as inspiration for your own portfolio.
-
-## 🙏 Acknowledgments
-
-- Built with [v0.dev](https://v0.dev)
-- UI components from [shadcn/ui](https://ui.shadcn.com)
-- Icons from [Lucide](https://lucide.dev)
-- Hosted on [Vercel](https://vercel.com)
-
----
-
-**Need Help?** Open an issue or reach out via the contact page.
-
 **Made with ❤️ using Next.js, React, and Tailwind CSS**
