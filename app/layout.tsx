@@ -9,7 +9,7 @@ const _inter = Inter({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "EngiDev | Muhammad Ahmad Kashif - Software Engineer & Founder",
+  title: "EngiDev",
   description:
     "EngiDev - Portfolio of Muhammad Ahmad Kashif. Computer Science student at LUMS, software engineer, and founder specializing in distributed systems, AI, and full-stack development.",
   generator: "v0.app",
