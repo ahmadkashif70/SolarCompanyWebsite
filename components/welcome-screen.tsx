@@ -4,23 +4,31 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function WelcomeScreen() {
-  const [isVisible, setIsVisible] = useState(false);
+  // Start with true to prevent flash, then check in useEffect
+  const [isVisible, setIsVisible] = useState(true);
+  const [shouldRender, setShouldRender] = useState(true);
 
   useEffect(() => {
-    // Only show welcome screen if it hasn't been shown in this session
+    // Check sessionStorage immediately
     const hasSeenWelcome = sessionStorage.getItem("hasSeenWelcome");
 
-    if (!hasSeenWelcome) {
-      setIsVisible(true);
+    if (hasSeenWelcome) {
+      // Already seen, don't show at all
+      setIsVisible(false);
+      setShouldRender(false);
+    } else {
+      // First time, show welcome screen
       sessionStorage.setItem("hasSeenWelcome", "true");
 
       const timer = setTimeout(() => {
         setIsVisible(false);
-      }, 3000);
+      }, 2500);
 
       return () => clearTimeout(timer);
     }
   }, []);
+
+  if (!shouldRender) return null;
 
   return (
     <AnimatePresence>

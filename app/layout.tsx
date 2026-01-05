@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   title: "EngiDev",
   description:
     "EngiDev - Portfolio of Muhammad Ahmad Kashif. Computer Science student at LUMS, software engineer, and founder specializing in distributed systems, AI, and full-stack development.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
